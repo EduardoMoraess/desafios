@@ -4,30 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>social-link</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
     <!--CSS3-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <div class="social-links">
-            <div class="pefil">
-                <img src="#" alt="" class="usuario">
+            <div class="perfil">
+                <img src="kashinkoji.png" alt="" class="usuario">
                 <h2 class="name">Kashin Koji</h2>
                 <span style="color: hsl(75, 94%, 57%);">
                     Tokyo, Japão
                 </span>
                 <p class="paragrafo">
-                    "Front-end developer and avid reader."
+                    "Front-end developer ⚔️ The art of the pixel."
                 </p>
             </div>
             <div class="links">
-                <a class="link" href="#">link1</a>
-                <a class="link" href="#">link2</a>
-                <a class="link" href="#">link3</a>
-                <a class="link" href="#">link4</a>
-                <a class="link" href="#">link5</a>
+                <a class="link" href="#">instagram</a>
+                <a class="link" href="#">github</a>
+                <a class="link" href="#">tik tok</a>
+                <a class="link" href="#">site</a>
+                <a class="link" href="#">outros</a>
             </div>
         </div>
     </main>
+
+    <footer>
+        <p style="text-align: center; color: #fff; text-transform: uppercase; font-weight: bold; font-size: 14px;">
+            feito por eduardo moraes
+        </p>
+    </footer>
+
+    <!--javascript-->
+    <script>
+        const links = [
+            {id:1, url:""},
+            {id:2, url:""},
+            {id:3, url:""},
+            {id:4, url:""},
+            {id:5, url:""},
+        ]
+        function abrirLink(idDesejado){
+            const linkEncontrado = links.find(item => item.id === idDesejado);
+
+            if(linkEncontrado){
+                window.open(linkEncontrado.url, "_blank");
+            }
+            else{
+                console.error('Verificar se link existe')
+            }
+        }
+    </script>
 </body>
 </html>
