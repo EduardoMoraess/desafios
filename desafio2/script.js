@@ -11,5 +11,12 @@ function formularioLogin(){
             alert('verificar senha!')
             return
         }
+
+        if(usuario == "user" && senha == 123){
+            alert(`Seja Bem-Vindo(a) ${usuario}`);
+        }
+        else{
+            alert('Verificar credenciais')
+        }
     })
 }
